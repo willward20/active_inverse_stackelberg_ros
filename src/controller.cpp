@@ -67,15 +67,6 @@ class Controller
       if (!started_)
         return;
 
-      if (space_is_pressed())
-      {
-        ROS_WARN_STREAM("Spacebar pressed. Stopping robot.");
-        stop_robot();
-        publishRolloutData();
-        ROS_INFO_STREAM("Rollout data published");
-        return;
-      }
-
       // set the control lock flag to true so that other member variables are
       // not updated by callbacks while this function is executing.
       control_lock_ = true;
