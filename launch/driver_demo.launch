@@ -1,0 +1,101 @@
+<!-- This launch file starts gazebo, spawns the driver robot, and starts the simulation-->
+<launch>
+
+    <!-- Model names of the robots -->
+    <arg name="model" default="burger" doc="model type [burger, waffle, waffle_pi]"/>
+    <arg name="follower"  default="tbf"/>
+
+    <!-- Initial positions of the robots -->
+    <arg name="follower_x_pos" default=" 0.0"/>
+    <arg name="follower_y_pos" default=" 0.0"/>
+    <arg name="follower_z_pos" default=" 0.0"/>
+    <arg name="follower_yaw"   default=" 1.57"/>
+
+    <!-- Start gazebo and spawn robots -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/empty.world"/>
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="headless" value="false"/>
+        <arg name="debug" value="false"/>
+    </include>  
+
+    <group ns = "$(arg follower)">
+        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+        <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg follower) -x $(arg follower_x_pos) -y $(arg follower_y_pos) -z $(arg follower_z_pos) -Y $(arg follower_yaw) -param robot_description" />
+    </group>
+
+
+    <!-- Add node name to console output to identify which node is talking -->
+    <env name="ROSCONSOLE_FORMAT" value="[${severity}] [${time}] [${node}]: ${message}"/>
+
+    <!-- Use simulation time in gazebo instead of actual time -->
+    <param name="/use_sim_time" value="true"/>
+
+    <!-- Global node parameters -->
+    <arg name="SIM_MOCAP_UPDATE_FREQ"  default="100.0"/>
+    <arg name="CONTROLLER_CYCLE_RATE"  default="10.0"/>   
+    <arg name="K_X"  default="1.0"/>
+    <arg name="K_Y"  default="1.0"/>
+    <arg name="K_THETA"  default="1.0"/>     
+
+    <!-- start the experiment time server (for synchronization)  -->
+    <node pkg="ros_sockets" type="experiment_time" name="experiment_time" output="screen">
+        <param name="port" value="50011" type="int" />
+    </node>
+
+    <!-- Launch nodes for tbf -->
+    <group ns = "$(arg follower)">
+        <!-- Start gazebo motion capture simulation, with parameters for this node -->
+        <node pkg="ros_sockets" type="gazebo_tracker" name="gazebo_tracker"  output="screen">
+            <param name="tracker_name" value="vrpn_client_node/$(arg follower)" type="str" />
+            <param name="model_name" value="$(arg follower)" type="str" />
+            <param name="update_frequency" value="$(arg SIM_MOCAP_UPDATE_FREQ)" type="double" />
+        </node>
+
+        <!-- start the state feedback server -->
+        <node pkg="ros_sockets" type="state_feedback" name="state_feedback" output="screen">
+            <param name="tracker_name" value="vrpn_client_node/$(arg follower)" type="str" />
+            <param name="port" value="60010" type="int" />
+        </node>
+
+        <!-- start the rollout data server -->
+        <node pkg="ros_sockets" type="rollout_data" name="rollout_data" output="screen">
+            <param name="port" value="60012" type="int" />
+        </node>
+
+        <!-- start spline servers -->
+        <group ns = "ts">
+            <node pkg="ros_sockets" type="array_publisher" name="array_publisher" output="screen">
+                <param name="port" value="60013" type="int" />
+                <param name="topic_name" value="ts" type="str" />
+            </node>
+        </group>
+        <group ns = "coeffs_x">
+            <node pkg="ros_sockets" type="array_publisher" name="array_publisher" output="screen">
+                <param name="port" value="60014" type="int" />
+                <param name="topic_name" value="coeffs_x" type="str" />
+            </node>
+        </group>
+        <group ns = "coeffs_y">
+            <node pkg="ros_sockets" type="array_publisher" name="array_publisher" output="screen">
+                <param name="port" value="60015" type="int" />
+                <param name="topic_name" value="coeffs_y" type="str" />
+            </node>
+        </group>
+
+        <!-- Start the trajectory generator -->
+        <node pkg="active_inverse_stackelberg_ros" type="trajectory_generator" name="trajectory_generator"  output="screen" />
+
+        <!-- Start the controller -->
+        <node pkg="active_inverse_stackelberg_ros" type="controller" name="controller"  output="screen">
+            <param name="cycle_rate" value="$(arg CONTROLLER_CYCLE_RATE)" type="double" />
+            <param name="Kx" value="$(arg K_X)" type="double" />
+            <param name="Ky" value="$(arg K_Y)" type="double" />
+            <param name="Ktheta" value="$(arg K_THETA)" type="double" />
+            <param name="tracker_name" value="$(arg follower)" type="str" />
+        </node>
+    </group>
+
+</launch>
