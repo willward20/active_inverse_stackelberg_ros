@@ -1,3 +1,3 @@
-# active_inverse_Stackelberg
+# active_inverse_stackelberg_ros
 
-Code for active inverse learning in LQ Stackelberg games
+ROS package for implementing Active Inverse Stackelberg game demos. 
