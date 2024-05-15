@@ -74,7 +74,7 @@ class Controller
       double u_x = xdot_d_ - Kx_*(x_ - x_d_);
       double u_y = ydot_d_ - Ky_*(y_ - y_d_);
       double v = sqrt(u_x*u_x + u_y*u_y);
-      v = clamp(v, -0.22, 0.22);
+      //v = clamp(v, -0.22, 0.22);
 
       double theta_d;
       theta_d = atan2(u_y, u_x);
