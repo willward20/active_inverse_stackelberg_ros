@@ -40,22 +40,22 @@
     </include>  
 
     <group ns = "$(arg first_tb3)">
-        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />    
+        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find active_inverse_stackelberg_ros)/urdf/turtlebot3_$(arg model).urdf.xacro chassis_color:=Blue" />    
         <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg first_tb3) -x $(arg first_tb3_x_pos) -y $(arg first_tb3_y_pos) -z $(arg first_tb3_z_pos) -Y $(arg first_tb3_yaw) -param robot_description" />
     </group>
 
     <group ns = "$(arg second_tb3)">
-        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find active_inverse_stackelberg_ros)/urdf/turtlebot3_$(arg model).urdf.xacro chassis_color:=Green" />
         <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg second_tb3) -x $(arg second_tb3_x_pos) -y $(arg second_tb3_y_pos) -z $(arg second_tb3_z_pos) -Y $(arg second_tb3_yaw) -param robot_description" />
     </group>
 
     <group ns = "$(arg third_tb3)">
-        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find active_inverse_stackelberg_ros)/urdf/turtlebot3_$(arg model).urdf.xacro chassis_color:=Red" />
         <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg third_tb3) -x $(arg third_tb3_x_pos) -y $(arg third_tb3_y_pos) -z $(arg third_tb3_z_pos) -Y $(arg third_tb3_yaw) -param robot_description" />
     </group>
 
     <group ns = "$(arg follower_tb3)">
-        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_waffle.urdf.xacro" />
+        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find active_inverse_stackelberg_ros)/urdf/turtlebot3_$(arg model).urdf.xacro chassis_color:=Purple" />
         <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg follower_tb3) -x $(arg follower_tb3_x_pos) -y $(arg follower_tb3_y_pos) -z $(arg follower_tb3_z_pos) -Y $(arg follower_tb3_yaw) -param robot_description" />
     </group>
 

@@ -22,7 +22,7 @@
     </include>  
 
     <group ns = "$(arg follower)">
-        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find active_inverse_stackelberg_ros)/urdf/turtlebot3_$(arg model).urdf.xacro chassis_color:=Purple" />
         <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg follower) -x $(arg follower_x_pos) -y $(arg follower_y_pos) -z $(arg follower_z_pos) -Y $(arg follower_yaw) -param robot_description" />
     </group>
 

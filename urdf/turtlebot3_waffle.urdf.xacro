@@ -10,6 +10,8 @@
 
   <link name="base_footprint"/>
 
+  <xacro:arg name="chassis_color" default="DarkGrey"/>
+
   <joint name="base_joint" type="fixed">
     <parent link="base_footprint"/>
     <child link="base_link" />
@@ -40,6 +42,10 @@
                izz="1.4612727e-02" />
     </inertial>
   </link>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/$(arg chassis_color)</material>
+  </gazebo>
 
   <joint name="wheel_left_joint" type="continuous">
     <parent link="base_link"/>

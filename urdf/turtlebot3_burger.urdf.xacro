@@ -3,6 +3,8 @@
   <xacro:include filename="$(find turtlebot3_description)/urdf/common_properties.xacro"/>
   <xacro:include filename="$(find turtlebot3_description)/urdf/turtlebot3_burger.gazebo.xacro"/>
 
+  <xacro:arg name="chassis_color" default="DarkGrey"/>
+
   <link name="base_footprint"/>
 
   <joint name="base_joint" type="fixed">
@@ -17,7 +19,7 @@
       <geometry>
         <mesh filename="package://turtlebot3_description/meshes/bases/burger_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="light_black"/>
+      <material name="$(arg chassis_color)"/>
     </visual>
 
     <collision>
@@ -35,6 +37,10 @@
                izz="2.0064271e-03" />
     </inertial>
   </link>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/$(arg chassis_color)</material>
+  </gazebo>
 
   <joint name="wheel_left_joint" type="continuous">
     <parent link="base_link"/>
