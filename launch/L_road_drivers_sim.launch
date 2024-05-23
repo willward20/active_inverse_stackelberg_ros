@@ -23,7 +23,7 @@
 
     <!-- Start gazebo and spawn robots -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="$(find active_inverse_stackelberg_ros)/worlds/driver_sim.world"/>
+        <arg name="world_name" value="$(find active_inverse_stackelberg_ros)/worlds/L_road_driver_sim.world"/>
         <arg name="paused" value="false"/>
         <arg name="use_sim_time" value="true"/>
         <arg name="gui" value="true"/>

@@ -26,6 +26,9 @@ Manifest.toml
 # VS Code
 .vscode
 
+# Videos
+videos/
+
 
 msg/*ActionFeedback.msg
 msg/*ActionGoal.msg
