@@ -58,154 +58,35 @@
           <max_contacts>10</max_contacts>
         </collision>
         <visual name='road1'>
-          <pose>-0.75 0 0 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
           <cast_shadows>1</cast_shadows>
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>3 20</size>
+              <size>18 18</size>
             </plane>
           </geometry>
           <material>
             <script>
               <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Road</name>
+              <name>Gazebo/RoadMerged</name>
             </script>
             <ambient>1 1 1 1</ambient>
           </material>
         </visual>
-        <visual name='road2'>
-          <pose>-2.8 0 0.01 0 -0 0</pose>
+        <visual name='graph'>
+          <pose>2 3 0.01 0 -0 0</pose>
           <cast_shadows>1</cast_shadows>
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>1.5 20</size>
+              <size>6.286 6.286</size>
             </plane>
           </geometry>
           <material>
             <script>
               <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/RoadTrimmed</name>
-            </script>
-            <ambient>1 1 1 1</ambient>
-          </material>
-        </visual>
-        <visual name='road3'>
-          <pose>1.5 0 0 0 -0 0</pose>
-          <cast_shadows>1</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>1.5 20</size>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/RoadTrimmed</name>
-            </script>
-            <ambient>1 1 1 1</ambient>
-          </material>
-        </visual>
-        <visual name='road4'>
-          <pose>-4.3 0 0 0 -0 -3.14159</pose>
-          <cast_shadows>1</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>1.5 20</size>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/RoadTrimmed</name>
-            </script>
-            <ambient>1 1 1 1</ambient>
-          </material>
-        </visual>
-        <visual name='road5'>
-          <pose>3 0 0 0 -0 -3.14159</pose>
-          <cast_shadows>1</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>1.5 20</size>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/RoadTrimmed</name>
-            </script>
-            <ambient>1 1 1 1</ambient>
-          </material>
-        </visual>
-        <visual name='road6'>
-          <pose>-5.8 0 0 0 -0 0</pose>
-          <cast_shadows>1</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>1.5 20</size>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/RoadTrimmed</name>
-            </script>
-            <ambient>1 1 1 1</ambient>
-          </material>
-        </visual>
-        <visual name='road7'>
-          <pose>4.5 0 0 0 -0 -3.14159</pose>
-          <cast_shadows>1</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>1.5 20</size>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/RoadTrimmed</name>
-            </script>
-            <ambient>1 1 1 1</ambient>
-          </material>
-        </visual>
-        <visual name='road8'>
-          <pose>-7.2 0 0 0 -0 -3.14159</pose>
-          <cast_shadows>1</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>1.5 20</size>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/RoadTrimmed</name>
-            </script>
-            <ambient>1 1 1 1</ambient>
-          </material>
-        </visual>
-        <visual name='road9'>
-          <pose>6 0 0 0 -0 0</pose>
-          <cast_shadows>1</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>1.5 20</size>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/RoadTrimmed</name>
+              <name>Gazebo/FullGraphTexture</name>
             </script>
             <ambient>1 1 1 1</ambient>
           </material>
@@ -724,18 +605,18 @@
       <static>1</static>
     </model>
     <state world_name='default'>
-      <sim_time>2546 699000000</sim_time>
-      <real_time>289 835940343</real_time>
-      <wall_time>1716748234 17727880</wall_time>
-      <iterations>289145</iterations>
+      <sim_time>2645 89000000</sim_time>
+      <real_time>55 901084999</real_time>
+      <wall_time>1717723494 650755249</wall_time>
+      <iterations>55802</iterations>
       <model name='cardboard_box'>
         <pose>0.346762 3.54648 0.148999 0 -0 0.2101</pose>
         <scale>1 1 1</scale>
         <link name='link'>
           <pose>0.346762 3.54648 0.148999 0 -0 0.2101</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -0 -0 0 -0 0</acceleration>
-          <wrench>-0 -0 -0 0 -0 0</wrench>
+          <acceleration>0 -0 0 0 -0 0</acceleration>
+          <wrench>0 -0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='cardboard_box_0'>
@@ -744,8 +625,8 @@
         <link name='link'>
           <pose>-0.178847 3.62236 0.148999 0 0 -1.52351</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -0 -0 0 -0 0</acceleration>
-          <wrench>-0 -0 -0 0 -0 0</wrench>
+          <acceleration>-0 -0 0 0 -0 0</acceleration>
+          <wrench>-0 -0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='cardboard_box_1'>
@@ -754,8 +635,8 @@
         <link name='link'>
           <pose>0.154734 3.57683 0.447999 0 1e-06 0.268813</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -0 0 -0 -0 -0</acceleration>
-          <wrench>-0 -0 0 0 -0 0</wrench>
+          <acceleration>-0 0 0 0 -0 0</acceleration>
+          <wrench>-0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='cardboard_box_2'>
@@ -764,8 +645,8 @@
         <link name='link'>
           <pose>-2.25106 -0.75303 0.149 0 -0 1.38085</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.8e-05 -3e-06 0 2.2e-05 0.000166 0</acceleration>
-          <wrench>3.7e-05 -5e-06 1e-06 0 -0 0</wrench>
+          <acceleration>-1.8e-05 3e-06 -0 -2.2e-05 -0.000166 0</acceleration>
+          <wrench>-3.7e-05 5e-06 -1e-06 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -779,23 +660,23 @@
         </link>
       </model>
       <model name='pallet_box_mobile'>
-        <pose>-1.49283 2.53702 -0.005009 1.1e-05 -1.6e-05 -0.000447</pose>
+        <pose>-1.49287 2.53696 -0.005008 1.2e-05 -6e-06 -0.000488</pose>
         <scale>1 1 1</scale>
         <link name='pallet_base'>
-          <pose>-1.49283 2.53702 -0.005009 1.1e-05 -1.6e-05 -0.000447</pose>
+          <pose>-1.49287 2.53696 -0.005008 1.2e-05 -6e-06 -0.000488</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-1.37966 -0.481286 3.86188 -2.18904 0.545638 3.07038</acceleration>
-          <wrench>-275.933 -96.2572 772.375 0 -0 0</wrench>
+          <acceleration>-1.40501 -0.374555 2.42383 -2.1626 0.415613 -3.13754</acceleration>
+          <wrench>-281.002 -74.9109 484.767 0 -0 0</wrench>
         </link>
       </model>
       <model name='pallet_box_mobile_clone'>
-        <pose>5.76421 4.01003 -0.005009 9e-06 -8e-06 -1.58686</pose>
+        <pose>5.76408 4.01019 -0.005007 1e-05 8e-06 -1.58679</pose>
         <scale>1 1 1</scale>
         <link name='pallet_base'>
-          <pose>5.76421 4.01003 -0.005009 9e-06 -8e-06 -1.58686</pose>
+          <pose>5.76408 4.01019 -0.005007 1e-05 8e-06 -1.58679</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.655551 -2.18842 -3.7207 2.39875 1.45327 3.13651</acceleration>
-          <wrench>131.11 -437.684 -744.141 0 -0 0</wrench>
+          <acceleration>-0.355673 -1.12733 1.09577 2.85389 -0.901163 -0.00021</acceleration>
+          <wrench>-71.1346 -225.465 219.154 0 -0 0</wrench>
         </link>
       </model>
       <model name='shelf'>
@@ -849,7 +730,7 @@
         </link>
       </model>
       <model name='shelf_1_clone_0_clone'>
-        <pose>4.45203 4.82237 0 0 0 -1.5589</pose>
+        <pose>4.45204 4.82238 0 0 0 -1.5589</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
           <pose>4.44609 5.32234 0 0 0 -1.5589</pose>
@@ -899,7 +780,7 @@
         </link>
       </model>
       <model name='shelf_2_clone_clone'>
-        <pose>4.46279 0.345164 0 0 -0 1.56812</pose>
+        <pose>4.46279 0.345163 0 0 -0 1.56812</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
           <pose>4.46145 -0.154835 0 0 -0 1.56812</pose>
@@ -981,13 +862,10 @@
       <light name='sun'>
         <pose>0 0 10 0 -0 0</pose>
       </light>
-      <light name='user_spot_light_0'>
-        <pose>-0.042168 1.92357 15 0 -0 0</pose>
-      </light>
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>0.076159 0.17538 8.48578 0 1.38179 1.56162</pose>
+        <pose>1.43633 1.64515 7.00628 -4.4e-05 1.5698 1.56554</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -1499,24 +1377,6 @@
       </link>
       <static>1</static>
     </model>
-    <light name='user_spot_light_0' type='spot'>
-      <pose>-0.042168 1.92357 1 0 -0 0</pose>
-      <diffuse>0.5 0.5 0.5 1</diffuse>
-      <specular>0.1 0.1 0.1 1</specular>
-      <direction>0 0 -1</direction>
-      <attenuation>
-        <range>20</range>
-        <constant>0.5</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <cast_shadows>0</cast_shadows>
-      <spot>
-        <inner_angle>0.6</inner_angle>
-        <outer_angle>1</outer_angle>
-        <falloff>1</falloff>
-      </spot>
-    </light>
     <model name='shelf_1_clone_0_clone'>
       <pose>4.49629 4.76757 0 0 0 -1.5589</pose>
       <self_collide>1</self_collide>
