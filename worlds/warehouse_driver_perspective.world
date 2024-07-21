@@ -605,10 +605,10 @@
       <static>1</static>
     </model>
     <state world_name='default'>
-      <sim_time>3118 206000000</sim_time>
-      <real_time>151 936752594</real_time>
-      <wall_time>1718858356 478762357</wall_time>
-      <iterations>151702</iterations>
+      <sim_time>3208 56000000</sim_time>
+      <real_time>89 980127300</real_time>
+      <wall_time>1719080166 791754009</wall_time>
+      <iterations>89850</iterations>
       <model name='cardboard_box'>
         <pose>0.346762 3.54648 0.148999 0 -0 0.2101</pose>
         <scale>1 1 1</scale>
@@ -625,8 +625,8 @@
         <link name='link'>
           <pose>-0.178847 3.62236 0.148999 0 0 -1.52351</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
+          <acceleration>-0 -0 0 0 -0 0</acceleration>
+          <wrench>-0 -0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='cardboard_box_1'>
@@ -635,7 +635,7 @@
         <link name='link'>
           <pose>0.154734 3.57683 0.447999 0 1e-06 0.268813</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 0 0 -0 -0 -0</acceleration>
+          <acceleration>-0 0 0 0 -0 0</acceleration>
           <wrench>-0 0 0 0 -0 0</wrench>
         </link>
       </model>
@@ -655,8 +655,8 @@
         <link name='link'>
           <pose>2.19701 0.034084 0.148999 0 -1e-06 0.015202</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -0 0 0 -0 0</acceleration>
-          <wrench>-0 -0 0 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='cardboard_box_4'>
@@ -665,8 +665,8 @@
         <link name='link'>
           <pose>2.00535 0.032676 0.447998 -1e-06 -4e-06 0.461141</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
+          <acceleration>-0 0 0 0 -0 0</acceleration>
+          <wrench>-0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -680,23 +680,23 @@
         </link>
       </model>
       <model name='pallet_box_mobile'>
-        <pose>-1.49288 2.53664 -0.00501 1e-05 -2e-06 -0.00068</pose>
+        <pose>-1.49288 2.53663 -0.00501 1.7e-05 -0 -0.000679</pose>
         <scale>1 1 1</scale>
         <link name='pallet_base'>
-          <pose>-1.49288 2.53664 -0.00501 1e-05 -2e-06 -0.00068</pose>
+          <pose>-1.49288 2.53663 -0.00501 1.7e-05 -0 -0.000679</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2.27684 0.828927 -2.83113 -2.12996 -0.518829 -0.004107</acceleration>
-          <wrench>455.368 165.785 -566.226 0 -0 0</wrench>
+          <acceleration>-2.01687 0.958998 -2.82468 -2.4621 1.1774 0.00455</acceleration>
+          <wrench>-403.375 191.8 -564.935 0 -0 0</wrench>
         </link>
       </model>
       <model name='pallet_box_mobile_clone'>
-        <pose>5.76259 4.01022 -0.005009 9e-06 -5e-06 -1.58546</pose>
+        <pose>5.76257 4.01024 -0.00501 8e-06 -4e-06 -1.58547</pose>
         <scale>1 1 1</scale>
         <link name='pallet_base'>
-          <pose>5.76259 4.01022 -0.005009 9e-06 -5e-06 -1.58546</pose>
+          <pose>5.76257 4.01024 -0.00501 8e-06 -4e-06 -1.58547</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.601079 1.83967 3.83017 1.62518 -1.53064 0.000366</acceleration>
-          <wrench>-120.216 367.934 766.034 0 -0 0</wrench>
+          <acceleration>0.726493 -2.34417 -2.95873 2.79354 1.29136 3.14089</acceleration>
+          <wrench>145.299 -468.835 -591.745 0 -0 0</wrench>
         </link>
       </model>
       <model name='shelf'>
@@ -885,7 +885,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>1.88348 1.93247 6.48306 -2.8e-05 1.5698 1.56556</pose>
+        <pose>-1.4138 3.83405 3.69251 -0 0.817797 -0.706465</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

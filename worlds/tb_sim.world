@@ -40,19 +40,25 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>100 100 </size>
+              <size>12.5 27.6 </size>
             </plane>
           </geometry>
           <material>
             <script>
               <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
+              <name>Gazebo/RoadTrimmed</name>
             </script>
             <ambient>1 1 1 1</ambient>
           </material>
         </visual>
       </link>
     </model>
-
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-0.202682 -4.29258 6.25624 -0 0.982514 1.5638</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
   </world>
 </sdf>
