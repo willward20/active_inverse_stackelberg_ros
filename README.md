@@ -35,10 +35,12 @@ ROS package for demonstrating active inverse stackelberg game research in Gazebo
       . devel/setup.bash
 
   # Usage
-  After following the steps above, run the leader/follower game (three leaders and follower) with
+  After following the steps above, run the leader/follower pursuit game with
 
-      roslaunch active_inverse_stackelberg_ros tb_sim.launch
+      roslaunch active_inverse_stackelberg_ros pursuit.launch
 
-  Run the driver game (one turtlebot) with
+  or run the driving assistant game with
 
-      roslaunch active_inverse_stackelberg_ros driver_sim.launch
+      roslaunch active_inverse_stackelberg_ros driver.launch
+ 
+  Then, start the Julia optimzation procedure (see other repository). 

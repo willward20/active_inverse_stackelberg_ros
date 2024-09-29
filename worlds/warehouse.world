@@ -63,7 +63,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>18 18</size>
+              <size>30 30</size>
             </plane>
           </geometry>
           <material>
@@ -74,19 +74,19 @@
             <ambient>1 1 1 1</ambient>
           </material>
         </visual>
-        <visual name='graph'>
-          <pose>2.298 2.948 0.01 0 -0 0</pose>
+        <visual name='Lroad_bundles'>
+          <pose>5.3 6.1 0.01 0 -0 0</pose>
           <cast_shadows>1</cast_shadows>
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>6.0513 6.0513</size>
+              <size>13 13</size>
             </plane>
           </geometry>
           <material>
             <script>
               <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/FullGraphTexture2</name>
+              <name>Gazebo/FinalBundles</name>
             </script>
             <ambient>1 1 1 1</ambient>
           </material>
@@ -605,68 +605,78 @@
       <static>1</static>
     </model>
     <state world_name='default'>
-      <sim_time>3118 206000000</sim_time>
-      <real_time>151 936752594</real_time>
-      <wall_time>1718858356 478762357</wall_time>
-      <iterations>151702</iterations>
+      <sim_time>5158 796000000</sim_time>
+      <real_time>79 845300000</real_time>
+      <wall_time>1727625943 382500013</wall_time>
+      <iterations>79490</iterations>
       <model name='cardboard_box'>
-        <pose>0.346762 3.54648 0.148999 0 -0 0.2101</pose>
+        <pose>0.160995 4.71952 0.149 0 -0 0.142248</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.346762 3.54648 0.148999 0 -0 0.2101</pose>
+          <pose>0.160995 4.71952 0.149 0 -0 0.142248</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
+          <acceleration>0.002766 -0.010499 -0.003711 0.069439 0.020073 -7e-05</acceleration>
+          <wrench>0.005532 -0.020997 -0.007421 0 -0 0</wrench>
         </link>
       </model>
       <model name='cardboard_box_0'>
-        <pose>-0.178847 3.62236 0.148999 0 0 -1.52351</pose>
+        <pose>-0.323744 4.98276 0.149 -0 -0 -1.48151</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.178847 3.62236 0.148999 0 0 -1.52351</pose>
+          <pose>-0.323744 4.98276 0.149 -0 -0 -1.48151</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
+          <acceleration>-0.001851 0.005707 0.002164 -0.028323 -0.020076 1.1e-05</acceleration>
+          <wrench>-0.003702 0.011415 0.004327 0 -0 0</wrench>
         </link>
       </model>
       <model name='cardboard_box_1'>
-        <pose>0.154734 3.57683 0.447999 0 1e-06 0.268813</pose>
+        <pose>0.168934 5.26649 0.149 0 -0 0.268838</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.154734 3.57683 0.447999 0 1e-06 0.268813</pose>
+          <pose>0.168934 5.26649 0.149 0 -0 0.268838</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 0 0 -0 -0 -0</acceleration>
-          <wrench>-0 0 0 0 -0 0</wrench>
+          <acceleration>-4e-06 1.6e-05 -0 -0.000109 -3.4e-05 0</acceleration>
+          <wrench>-8e-06 3.3e-05 -1e-06 0 -0 0</wrench>
         </link>
       </model>
       <model name='cardboard_box_2'>
-        <pose>-2.25106 -0.75303 0.149 0 -0 1.38085</pose>
+        <pose>-2.15609 2.17877 0.149 0 -0 1.40604</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-2.25106 -0.75303 0.149 0 -0 1.38085</pose>
+          <pose>-2.15609 2.17877 0.149 0 -0 1.40604</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-1.8e-05 3e-06 -0 -2.2e-05 -0.000166 0</acceleration>
+          <acceleration>-1.9e-05 2e-06 -0 -1.9e-05 -0.000168 -0</acceleration>
           <wrench>-3.7e-05 5e-06 -1e-06 0 -0 0</wrench>
         </link>
       </model>
       <model name='cardboard_box_3'>
-        <pose>2.19701 0.034084 0.148999 0 -1e-06 0.015202</pose>
+        <pose>2.17751 1.31987 0.148999 1e-06 -1e-06 0.015468</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>2.19701 0.034084 0.148999 0 -1e-06 0.015202</pose>
+          <pose>2.17751 1.31987 0.148999 1e-06 -1e-06 0.015468</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -0 0 0 -0 0</acceleration>
-          <wrench>-0 -0 0 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='cardboard_box_4'>
-        <pose>2.00535 0.032676 0.447998 -1e-06 -4e-06 0.461141</pose>
+        <pose>2.05138 1.23304 0.447998 1e-06 -4e-06 0.458911</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>2.00535 0.032676 0.447998 -1e-06 -4e-06 0.461141</pose>
+          <pose>2.05138 1.23304 0.447998 1e-06 -4e-06 0.458911</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
+          <acceleration>0 -0 -0 0 -0 0</acceleration>
+          <wrench>0 -0 -0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='cardboard_box_4_clone'>
+        <pose>2.06859 -0.300915 0.149 0 -0 -0.021188</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>2.06859 -0.300915 0.149 0 -0 -0.021188</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>1e-06 1.9e-05 0 -0.000128 5e-06 0</acceleration>
+          <wrench>1e-06 3.9e-05 1e-06 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -680,90 +690,120 @@
         </link>
       </model>
       <model name='pallet_box_mobile'>
-        <pose>-1.49288 2.53664 -0.00501 1e-05 -2e-06 -0.00068</pose>
+        <pose>-1.49104 3.71104 -0.005007 1.2e-05 9e-06 -0.001436</pose>
         <scale>1 1 1</scale>
         <link name='pallet_base'>
-          <pose>-1.49288 2.53664 -0.00501 1e-05 -2e-06 -0.00068</pose>
+          <pose>-1.49104 3.71104 -0.005007 1.2e-05 9e-06 -0.001436</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2.27684 0.828927 -2.83113 -2.12996 -0.518829 -0.004107</acceleration>
-          <wrench>455.368 165.785 -566.226 0 -0 0</wrench>
+          <acceleration>1.04176 -0.328225 1.05899 -2.31223 0.504228 -3.14146</acceleration>
+          <wrench>208.352 -65.645 211.797 0 -0 0</wrench>
         </link>
       </model>
       <model name='pallet_box_mobile_clone'>
-        <pose>5.76259 4.01022 -0.005009 9e-06 -5e-06 -1.58546</pose>
+        <pose>5.78681 5.30529 -0.005008 1e-05 -1e-05 -1.58393</pose>
         <scale>1 1 1</scale>
         <link name='pallet_base'>
-          <pose>5.76259 4.01022 -0.005009 9e-06 -5e-06 -1.58546</pose>
+          <pose>5.78681 5.30529 -0.005008 1e-05 -1e-05 -1.58393</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.601079 1.83967 3.83017 1.62518 -1.53064 0.000366</acceleration>
-          <wrench>-120.216 367.934 766.034 0 -0 0</wrench>
+          <acceleration>-0.450395 1.2969 2.54019 2.99985 -1.17129 0.005349</acceleration>
+          <wrench>-90.0789 259.38 508.037 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pallet_box_mobile_clone_clone'>
+        <pose>11.6495 2.099 -0.00501 8e-06 -4e-06 -1.58526</pose>
+        <scale>1 1 1</scale>
+        <link name='pallet_base'>
+          <pose>11.6495 2.099 -0.00501 8e-06 -4e-06 -1.58526</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.726861 -2.34396 -2.95893 2.79301 1.29042 3.14089</acceleration>
+          <wrench>145.372 -468.793 -591.787 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='pallet_box_mobile_clone_clone_0'>
+        <pose>5.58907 -0.264062 -0.005007 1.2e-05 9e-06 0.00327</pose>
+        <scale>1 1 1</scale>
+        <link name='pallet_base'>
+          <pose>5.58907 -0.264062 -0.005007 1.2e-05 9e-06 0.00327</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>1.03143 -0.331688 1.07039 -2.30335 0.530391 -3.14147</acceleration>
+          <wrench>206.286 -66.3376 214.077 0 -0 0</wrench>
         </link>
       </model>
       <model name='shelf'>
-        <pose>-1.34592 -0.707469 0 0 0 -1.57638</pose>
+        <pose>-1.3235 0.469429 0 0 0 -1.57638</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>-1.34313 -0.207477 0 0 0 -1.57638</pose>
+          <pose>-1.32071 0.969421 0 0 0 -1.57638</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='shelf_0'>
-        <pose>1.31058 0.3066 0 0 -0 1.56762</pose>
+        <pose>1.31434 1.49246 0 0 -0 1.56762</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>1.30899 -0.193397 0 0 -0 1.56762</pose>
+          <pose>1.31275 0.992463 0 0 -0 1.56762</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='shelf_1'>
-        <pose>1.3226 5.77934 0 0 -0 1.57016</pose>
+        <pose>1.32333 6.93135 0 0 -0 1.57016</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>1.32228 5.27934 0 0 -0 1.57016</pose>
+          <pose>1.32301 6.43135 0 0 -0 1.57016</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='shelf_1_clone'>
-        <pose>-1.3114 5.82214 0 0 -0 1.57016</pose>
+        <pose>-1.31078 6.80473 0 0 -0 1.57016</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>-1.31172 5.32214 0 0 -0 1.57016</pose>
+          <pose>-1.3111 6.30473 0 0 -0 1.57016</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='shelf_1_clone_0'>
-        <pose>2.82936 4.78238 0 0 0 -1.5589</pose>
+        <pose>2.82648 5.9201 0 0 0 -1.57161</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>2.82341 5.28234 0 0 0 -1.5589</pose>
+          <pose>2.82689 6.4201 0 0 0 -1.57161</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='shelf_1_clone_0_clone'>
-        <pose>4.45204 4.82238 0 0 0 -1.5589</pose>
+        <pose>4.43923 5.89877 0 0 0 -1.5589</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>4.44609 5.32234 0 0 0 -1.5589</pose>
+          <pose>4.43328 6.39873 0 0 0 -1.5589</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='shelf_1_clone_0_clone_clone'>
+        <pose>7.02866 5.8793 0 0 0 -1.57026</pose>
+        <scale>1 1 1</scale>
+        <link name='shelf_base'>
+          <pose>7.02839 6.3793 0 0 0 -1.57026</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='shelf_1_clone_clone'>
-        <pose>-2.87058 5.8274 0 0 -0 1.57016</pose>
+        <pose>-2.87015 6.79688 0 0 -0 1.57016</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>-2.8709 5.3274 0 0 -0 1.57016</pose>
+          <pose>-2.87047 6.29688 0 0 -0 1.57016</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -780,10 +820,10 @@
         </link>
       </model>
       <model name='shelf_2_clone'>
-        <pose>2.8546 -0.679335 0 0 0 -1.57831</pose>
+        <pose>2.86323 0.46913 0 0 0 -1.57831</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>2.85836 -0.179349 0 0 0 -1.57831</pose>
+          <pose>2.86699 0.969116 0 0 0 -1.57831</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -800,10 +840,10 @@
         </link>
       </model>
       <model name='shelf_2_clone_clone'>
-        <pose>4.46279 0.345163 0 0 -0 1.56812</pose>
+        <pose>4.46582 1.47838 0 0 -0 1.56812</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>4.46145 -0.154835 0 0 -0 1.56812</pose>
+          <pose>4.46448 0.978382 0 0 -0 1.56812</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -814,6 +854,86 @@
         <scale>1 1 1</scale>
         <link name='shelf_base'>
           <pose>4.467 -4.05348 0 0 0 -1.57831</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='shelf_2_clone_clone_0_clone'>
+        <pose>6.98882 -4.5485 0 0 0 -1.57831</pose>
+        <scale>1 1 1</scale>
+        <link name='shelf_base'>
+          <pose>6.99258 -4.04851 0 0 0 -1.57831</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='shelf_2_clone_clone_1'>
+        <pose>8.47305 0.443205 0 0 0 -1.57831</pose>
+        <scale>1 1 1</scale>
+        <link name='shelf_base'>
+          <pose>8.47681 0.943191 0 0 0 -1.57831</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='shelf_2_clone_clone_2'>
+        <pose>8.52903 -4.56 0 0 0 -1.57831</pose>
+        <scale>1 1 1</scale>
+        <link name='shelf_base'>
+          <pose>8.53279 -4.06001 0 0 0 -1.57831</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='shelf_2_clone_clone_clone'>
+        <pose>7.02126 1.46315 0 0 -0 1.56812</pose>
+        <scale>1 1 1</scale>
+        <link name='shelf_base'>
+          <pose>7.01992 0.963155 0 0 -0 1.56812</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='shelf_2_clone_clone_clone_clone'>
+        <pose>8.49526 6.87251 0 0 -0 1.56812</pose>
+        <scale>1 1 1</scale>
+        <link name='shelf_base'>
+          <pose>8.49392 6.37251 0 0 -0 1.56812</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='shelf_2_clone_clone_clone_clone_0'>
+        <pose>10.0235 1.4155 0 0 -0 1.56812</pose>
+        <scale>1 1 1</scale>
+        <link name='shelf_base'>
+          <pose>10.0222 0.915506 0 0 -0 1.56812</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='shelf_2_clone_clone_clone_clone_0_clone'>
+        <pose>10.023 -3.55831 0 0 -0 1.56812</pose>
+        <scale>1 1 1</scale>
+        <link name='shelf_base'>
+          <pose>10.0217 -4.05831 0 0 -0 1.56812</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='shelf_2_clone_clone_clone_clone_clone'>
+        <pose>10.0377 6.87661 0 0 -0 1.56812</pose>
+        <scale>1 1 1</scale>
+        <link name='shelf_base'>
+          <pose>10.0364 6.37661 0 0 -0 1.56812</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -840,20 +960,20 @@
         </link>
       </model>
       <model name='shelf_clone'>
-        <pose>-2.87644 -0.720421 0 0 0 -1.57638</pose>
+        <pose>-2.86998 0.435474 0 0 0 -1.57638</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>-2.87365 -0.220429 0 0 0 -1.57638</pose>
+          <pose>-2.86719 0.935466 0 0 0 -1.57638</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='shelf_clone_clone'>
-        <pose>-4.37361 0.260514 0 0 -0 1.56896</pose>
+        <pose>-4.3715 1.40522 0 0 -0 1.56896</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>-4.37453 -0.239485 0 0 -0 1.56896</pose>
+          <pose>-4.37242 0.905223 0 0 -0 1.56896</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -870,10 +990,10 @@
         </link>
       </model>
       <model name='shelf_clone_clone_1'>
-        <pose>-4.38536 4.81032 0 0 0 -1.57638</pose>
+        <pose>-4.37969 5.82583 0 0 0 -1.57638</pose>
         <scale>1 1 1</scale>
         <link name='shelf_base'>
-          <pose>-4.38257 5.31031 0 0 0 -1.57638</pose>
+          <pose>-4.3769 6.32582 0 0 0 -1.57638</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -885,7 +1005,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>1.88348 1.93247 6.48306 -2.8e-05 1.5698 1.56556</pose>
+        <pose>4.70603 2.47444 11.6276 -1.1e-05 1.5698 1.56166</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -1735,6 +1855,744 @@
     </model>
     <model name='cardboard_box_4'>
       <pose>1.96013 -0.014431 0.15 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>2</mass>
+          <inertia>
+            <ixx>0.0416667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0566667</iyy>
+            <iyz>0</iyz>
+            <izz>0.0683333</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.5 0.4 0.3</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+                <min_depth>0.001</min_depth>
+                <max_vel>0.1</max_vel>
+              </ode>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <pose>0 0 -0.15 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://cardboard_box/meshes/cardboard_box.dae</uri>
+              <scale>1.25932 1.00745 0.755591</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='shelf_1_clone_0_clone_clone'>
+      <pose>6.89451 5.10385 0 0 0 -1.5589</pose>
+      <self_collide>1</self_collide>
+      <link name='shelf_base'>
+        <pose>-0.5 0 0 0 -0 0</pose>
+        <collision name='shelf_chassi_collision'>
+          <pose>0 0 0.9 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>3.6 0.6 1.8</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='shelf_chassi_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.2 0.3 0.3</scale>
+              <uri>/home/wward/.ignition/fuel/fuel.ignitionrobotics.org/movai/models/shelf/1/meshes/shelf_big_movai.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='shelf_2_clone_clone_clone'>
+      <pose>7.07338 0.827663 0 0 -0 1.56812</pose>
+      <self_collide>1</self_collide>
+      <link name='shelf_base'>
+        <pose>-0.5 0 0 0 -0 0</pose>
+        <collision name='shelf_chassi_collision'>
+          <pose>0 0 0.9 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>3.6 0.6 1.8</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='shelf_chassi_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.2 0.3 0.3</scale>
+              <uri>/home/wward/.ignition/fuel/fuel.ignitionrobotics.org/movai/models/shelf/1/meshes/shelf_big_movai.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='shelf_2_clone_clone_0_clone'>
+      <pose>6.98882 -4.5485 0 0 0 -1.57831</pose>
+      <self_collide>1</self_collide>
+      <link name='shelf_base'>
+        <pose>-0.5 0 0 0 -0 0</pose>
+        <collision name='shelf_chassi_collision'>
+          <pose>0 0 0.9 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>3.6 0.6 1.8</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='shelf_chassi_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.2 0.3 0.3</scale>
+              <uri>/home/wward/.ignition/fuel/fuel.ignitionrobotics.org/movai/models/shelf/1/meshes/shelf_big_movai.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='shelf_2_clone_clone_clone_clone'>
+      <pose>8.49327 6.12924 0 0 -0 1.56812</pose>
+      <self_collide>1</self_collide>
+      <link name='shelf_base'>
+        <pose>-0.5 0 0 0 -0 0</pose>
+        <collision name='shelf_chassi_collision'>
+          <pose>0 0 0.9 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>3.6 0.6 1.8</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='shelf_chassi_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.2 0.3 0.3</scale>
+              <uri>/home/wward/.ignition/fuel/fuel.ignitionrobotics.org/movai/models/shelf/1/meshes/shelf_big_movai.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='shelf_2_clone_clone_1'>
+      <pose>8.54046 -0.165109 0 0 0 -1.57831</pose>
+      <self_collide>1</self_collide>
+      <link name='shelf_base'>
+        <pose>-0.5 0 0 0 -0 0</pose>
+        <collision name='shelf_chassi_collision'>
+          <pose>0 0 0.9 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>3.6 0.6 1.8</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='shelf_chassi_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.2 0.3 0.3</scale>
+              <uri>/home/wward/.ignition/fuel/fuel.ignitionrobotics.org/movai/models/shelf/1/meshes/shelf_big_movai.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='shelf_2_clone_clone_2'>
+      <pose>8.73776 -0.932484 0 0 0 -1.57831</pose>
+      <self_collide>1</self_collide>
+      <link name='shelf_base'>
+        <pose>-0.5 0 0 0 -0 0</pose>
+        <collision name='shelf_chassi_collision'>
+          <pose>0 0 0.9 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>3.6 0.6 1.8</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='shelf_chassi_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.2 0.3 0.3</scale>
+              <uri>/home/wward/.ignition/fuel/fuel.ignitionrobotics.org/movai/models/shelf/1/meshes/shelf_big_movai.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='shelf_2_clone_clone_clone_clone_clone'>
+      <pose>10.0358 6.13807 0 0 -0 1.56812</pose>
+      <self_collide>1</self_collide>
+      <link name='shelf_base'>
+        <pose>-0.5 0 0 0 -0 0</pose>
+        <collision name='shelf_chassi_collision'>
+          <pose>0 0 0.9 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>3.6 0.6 1.8</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='shelf_chassi_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.2 0.3 0.3</scale>
+              <uri>/home/wward/.ignition/fuel/fuel.ignitionrobotics.org/movai/models/shelf/1/meshes/shelf_big_movai.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='shelf_2_clone_clone_clone_clone_0'>
+      <pose>9.90156 -0.054585 0 0 -0 1.56812</pose>
+      <self_collide>1</self_collide>
+      <link name='shelf_base'>
+        <pose>-0.5 0 0 0 -0 0</pose>
+        <collision name='shelf_chassi_collision'>
+          <pose>0 0 0.9 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>3.6 0.6 1.8</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='shelf_chassi_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.2 0.3 0.3</scale>
+              <uri>/home/wward/.ignition/fuel/fuel.ignitionrobotics.org/movai/models/shelf/1/meshes/shelf_big_movai.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='shelf_2_clone_clone_clone_clone_0_clone'>
+      <pose>9.98348 -3.58423 0 0 -0 1.56812</pose>
+      <self_collide>1</self_collide>
+      <link name='shelf_base'>
+        <pose>-0.5 0 0 0 -0 0</pose>
+        <collision name='shelf_chassi_collision'>
+          <pose>0 0 0.9 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>3.6 0.6 1.8</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='shelf_chassi_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.2 0.3 0.3</scale>
+              <uri>/home/wward/.ignition/fuel/fuel.ignitionrobotics.org/movai/models/shelf/1/meshes/shelf_big_movai.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='pallet_box_mobile_clone_clone'>
+      <pose>11.6424 1.42895 -0.005007 1e-05 -8e-06 -1.58526</pose>
+      <self_collide>0</self_collide>
+      <link name='pallet_base'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0.4 0 -0 0</pose>
+          <mass>200</mass>
+          <inertia>
+            <ixx>0.1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.1</iyy>
+            <iyz>0</iyz>
+            <izz>0.1</izz>
+          </inertia>
+        </inertial>
+        <collision name='pallet_top_collision'>
+          <pose>0 0 0.125 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.22 0.8 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.4</mu>
+                <mu2>0.4</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='pallet_center_collision'>
+          <pose>0 0 0.055 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.22 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='pallet_left_collision'>
+          <pose>0 -0.35 0.055 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.22 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='pallet_right_collision'>
+          <pose>0 0.35 0.055 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.22 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='boxes_collision'>
+          <pose>0 0 0.644 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.22 0.8 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='pallet_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>https://fuel.ignitionrobotics.org/1.0/MovAi/models/pallet/tip/files/meshes/pallet.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='boxes_visual'>
+          <pose>-0.053875 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>https://fuel.ignitionrobotics.org/1.0/movai/models/pallet_box_mobile/3/files/meshes/boxes.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <plugin name='ignition::gazebo::systems::PosePublisher' filename='ignition-gazebo-pose-publisher-system'>
+        <publish_link_pose>1</publish_link_pose>
+        <publish_collision_pose>0</publish_collision_pose>
+        <publish_visual_pose>0</publish_visual_pose>
+        <publish_nested_model_pose>1</publish_nested_model_pose>
+        <update_frequency>20</update_frequency>
+      </plugin>
+      <static>0</static>
+    </model>
+    <model name='pallet_box_mobile_clone_clone_0'>
+      <pose>5.5892 -0.263858 -0.005003 2.8e-05 -1e-06 -1.58406</pose>
+      <self_collide>0</self_collide>
+      <link name='pallet_base'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0.4 0 -0 0</pose>
+          <mass>200</mass>
+          <inertia>
+            <ixx>0.1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.1</iyy>
+            <iyz>0</iyz>
+            <izz>0.1</izz>
+          </inertia>
+        </inertial>
+        <collision name='pallet_top_collision'>
+          <pose>0 0 0.125 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.22 0.8 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.4</mu>
+                <mu2>0.4</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='pallet_center_collision'>
+          <pose>0 0 0.055 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.22 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='pallet_left_collision'>
+          <pose>0 -0.35 0.055 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.22 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='pallet_right_collision'>
+          <pose>0 0.35 0.055 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.22 0.1 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='boxes_collision'>
+          <pose>0 0 0.644 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.22 0.8 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='pallet_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>https://fuel.ignitionrobotics.org/1.0/MovAi/models/pallet/tip/files/meshes/pallet.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='boxes_visual'>
+          <pose>-0.053875 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>https://fuel.ignitionrobotics.org/1.0/movai/models/pallet_box_mobile/3/files/meshes/boxes.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <plugin name='ignition::gazebo::systems::PosePublisher' filename='ignition-gazebo-pose-publisher-system'>
+        <publish_link_pose>1</publish_link_pose>
+        <publish_collision_pose>0</publish_collision_pose>
+        <publish_visual_pose>0</publish_visual_pose>
+        <publish_nested_model_pose>1</publish_nested_model_pose>
+        <update_frequency>20</update_frequency>
+      </plugin>
+      <static>0</static>
+    </model>
+    <model name='cardboard_box_4_clone'>
+      <pose>2.06859 -0.300915 0.447998 1e-06 -4e-06 0.458913</pose>
       <link name='link'>
         <inertial>
           <mass>2</mass>
