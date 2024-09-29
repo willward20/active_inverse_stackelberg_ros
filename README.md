@@ -43,4 +43,4 @@ ROS package for demonstrating active inverse stackelberg game research in Gazebo
 
       roslaunch active_inverse_stackelberg_ros driver.launch
  
-  Then, start the Julia optimzation procedure (see other repository). 
+  Then, start the Julia optimzation procedure. Find the Julia code in [u-t-autonomous/active_inverse_stackelberg](https://github.com/u-t-autonomous/active_inverse_stackelberg) 
